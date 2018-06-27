@@ -79,13 +79,16 @@ public class EnUygun {
     }
 
     public static void Question2(){
-
+        
+        int rowNumber;
+        do{
         System.out.println("Enter a number!");
         Scanner input2 = new Scanner(System.in);
-        int rowNumber = input2.nextInt();
-
+        rowNumber = input2.nextInt();
+        }
+        while(rowNumber <=0);
+        
         int number = 1;
-
         for(int i =0; i<rowNumber; i++){
             for(int k=0; k<=i; k++){
                 System.out.print(number+"!");
